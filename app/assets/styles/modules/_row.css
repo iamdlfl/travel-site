@@ -6,6 +6,10 @@
         display: table;
     }
 
+    &--t-padding {
+        padding-top: 80px;
+    }
+
     &--padded {
         margin-right: -65px;
     }
@@ -14,12 +18,20 @@
         margin-right: -100px;
     }
 
+    &--padded-small {
+        margin-right: -45px;
+    }
+
     &--padded > div {
         padding-right: 65px;
     }
 
     &--padded-large > div {
         padding-right: 100px;
+    }
+
+    &--padded-small > div {
+        padding-right: 45px;
     }
 
     &__b-margin-until-medium {
@@ -55,6 +67,60 @@
         &__medium-8--smaller {
             width: 63%;
             float: left;
+        }
+    }
+
+    @media (min-width: 1010px) {
+
+        &__b-margin-until-large {
+            margin-bottom: 0;
+        }
+
+        &__large-4 {
+            float: left;
+            width: 33.333333%;
+        }
+
+        &__large-4--larger {
+            width: 37%;
+            float: left;
+        }
+
+        &__large-6 {
+            float: left; 
+            width: 50%;
+        }
+    
+        &__large-8 {
+            float: left;
+            width: 66.666666%;
+        }
+
+        &__large-8--smaller {
+            width: 63%;
+            float: left;
+        }
+    }
+
+    /* Begin Equal Height Rules */
+
+    &--equal-height-at-medium {
+        @media (min-width: 800px) {
+            display: flex;
+        }
+        & > div {
+            float: none;
+            display: flex;
+        }
+    }
+    
+    &--equal-height-at-large {
+        @media (min-width: 1010px) {
+            display: flex;
+        }
+        & > div {
+            float: none;
+            display: flex;
         }
     }
 

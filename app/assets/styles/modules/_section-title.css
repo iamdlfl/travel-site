@@ -17,12 +17,17 @@
         display: block;
         margin-left: auto;
         margin-right: auto;
-        margin-bottom: 1rem;
 
         @media (min-width: 530px) {
+            position: relative;
+            top: 8px;
             margin-right: 0.5rem;
             margin-left: 0;
             display: inline-block;
         }
+    }
+
+    &--blue {
+        color: $mainBlue;
     }
 }
