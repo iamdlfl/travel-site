@@ -3,6 +3,9 @@ import 'lazysizes'
 import MobileMenu from './modules/MobileMenu.js'
 import RevealOnScroll from'./modules/RevealOnScroll.js'
 import StickyHeader from './modules/StickyHeader.js'
+import ClientArea from './modules/ClientArea'
+
+new ClientArea();
 
 new StickyHeader();
 // Reveal - section to reveal, percent 'showing' at which to reveal it
