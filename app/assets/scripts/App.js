@@ -4,7 +4,6 @@ import MobileMenu from './modules/MobileMenu.js'
 import RevealOnScroll from'./modules/RevealOnScroll.js'
 import StickyHeader from './modules/StickyHeader.js'
 
-
 new StickyHeader();
 // Reveal - section to reveal, percent 'showing' at which to reveal it
 new RevealOnScroll(document.querySelectorAll('.feature-item'), 75);
