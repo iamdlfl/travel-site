@@ -1,6 +1,5 @@
 class Modal {
     constructor() {
-        this.openModalButtons = document.querySelectorAll('.open-modal');
         this.injectHTML();
         this.events();
         
@@ -29,8 +28,7 @@ class Modal {
       this.closeModalButton = document.querySelector('.modal__close');
     }
 
-    openTheModal(e) {
-        e.preventDefault();
+    openTheModal() {
         this.modal.classList.add('modal--is-visible');
     }
 
@@ -47,9 +45,6 @@ class Modal {
 
     events() {
         this.closeModalButton.addEventListener('click', e => this.closeTheModal(e));
-        this.openModalButtons.forEach(el => {
-            el.addEventListener('click', e => this.openTheModal(e))
-        });
         document.addEventListener('keyup', e => this.closeModalWithKey(e));
     }
 }
