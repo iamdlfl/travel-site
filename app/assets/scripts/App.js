@@ -5,8 +5,17 @@ import RevealOnScroll from'./modules/RevealOnScroll.js'
 import StickyHeader from './modules/StickyHeader.js'
 import ClientArea from './modules/ClientArea'
 
-new ClientArea();
 
+//React Goes Here
+// import React from 'react'
+// import ReactDom from 'react-dom'
+// import MyAmazingComponent from './modules/MyAmazingComponent'
+
+// ReactDom.render(<MyAmazingComponent />, document.querySelector("#my-react-example"));
+
+
+
+new ClientArea();
 new StickyHeader();
 // Reveal - section to reveal, percent 'showing' at which to reveal it
 new RevealOnScroll(document.querySelectorAll('.feature-item'), 75);
